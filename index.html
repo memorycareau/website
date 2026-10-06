@@ -3,22 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MemoryCare — Gentle support for everyday life with dementia</title>
-  <meta name="description" content="MemoryCare helps people living with dementia stay connected to the people, routines and memories that matter — and gives caregivers peace of mind.">
+  <title>MemoryCare — Their day, made simple</title>
+  <meta name="description" content="MemoryCare gives people living with dementia one calm, easy-to-read screen for tasks, medicines and help, and gives the family who cares peace of mind from anywhere.">
+  <meta name="theme-color" content="#1a7a60">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <!-- Shared icon: MemoryCare heart -->
+  <svg width="0" height="0" class="visually-hidden" aria-hidden="true">
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21.2 10.6 20C5.4 15.3 2 12.2 2 8.4 2 5.3 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.3 22 8.4c0 3.8-3.4 6.9-8.6 11.6L12 21.2z"/></symbol>
+  </svg>
+
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="MemoryCare home">
-        <!-- PLACEHOLDER: replace with final logo -->
-        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-mark" aria-hidden="true"><svg><use href="#i-heart"/></svg></span>
         <span class="brand-name">MemoryCare</span>
       </a>
 
@@ -29,9 +34,10 @@
 
       <nav id="site-nav" class="site-nav" aria-label="Main">
         <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
-          <li><a href="#caregivers">For caregivers</a></li>
+          <li><a href="#for-them">Features</a></li>
+          <li><a href="#safety">Safety</a></li>
+          <li><a href="#for-family">For families</a></li>
+          <li><a href="#games">Brain games</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
         <div class="nav-actions">
@@ -47,277 +53,349 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="hero" id="top">
+    <section class="hero green-band" id="top">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">For people living with dementia — and those who love them</p>
-          <h1>Familiar faces, gentle reminders, a calmer day.</h1>
-          <p class="lead">MemoryCare helps people with dementia stay connected to the people, routines and memories that matter most, while giving families and caregivers peace of mind.</p>
-          <div class="hero-ctas">
-            <a class="btn btn-primary" href="#download">Download MemoryCare</a>
-            <a class="btn btn-ghost" href="#video">Watch a 2-minute tour</a>
+          <p class="pill">For people living with dementia, and the family who cares</p>
+          <h1>Their day, <br>made simple.</h1>
+          <p class="lead">Tasks, medicines and help on one calm, easy-to-read screen, with peace of mind for the family, from anywhere.</p>
+          <div class="store-buttons">
+            <!-- TODO: replace with official App Store / Google Play badges and store links -->
+            <a class="store-btn" href="#download">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>
+              <span><small>Download on the</small>App Store</span>
+            </a>
+            <a class="store-btn" href="#download">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l9-8.5-9-8.5z"/><path d="m14 12 4.5-3M14 12l4.5 3"/></svg>
+              <span><small>Get it on</small>Google Play</span>
+            </a>
           </div>
           <ul class="hero-points">
-            <li>Large, simple screens</li>
-            <li>Set up by family, used with ease</li>
-            <li>Private by design</li>
+            <li>Big, simple buttons</li>
+            <li>Reminders read aloud</li>
+            <li>One-tap SOS</li>
           </ul>
         </div>
-        <div class="hero-media">
-          <div class="ph ph-phone" role="img" aria-label="Placeholder: MemoryCare home screen on a phone">
-            <span>App screenshot<small>Home screen · 1170 × 2532</small></span>
-          </div>
-          <div class="ph ph-photo hero-photo" role="img" aria-label="Placeholder: older adult and family member using the app together">
-            <span>Lifestyle photo<small>4 : 3</small></span>
-          </div>
+        <div class="hero-phones">
+          <img class="phone phone-back" src="assets/screens/dashboard.webp" width="600" height="1258" alt="Caregiver dashboard showing 86% task completion, wellbeing this week and an AI daily summary">
+          <img class="phone phone-front" src="assets/screens/home.webp" width="600" height="1264" alt="MemoryCare home screen: Hello, Mary. Up next, time for your morning walk, with a Mark done button, today's medications and an SOS button" fetchpriority="high">
         </div>
       </div>
     </section>
 
-    <!-- TRUST STRIP -->
-    <section class="trust" aria-label="Partners and recognition">
-      <div class="container trust-inner">
-        <p>Developed with input from families, caregivers and dementia care professionals</p>
-        <ul class="logo-row">
-          <li class="ph ph-logo">Partner logo</li>
-          <li class="ph ph-logo">Partner logo</li>
-          <li class="ph ph-logo">Partner logo</li>
-          <li class="ph ph-logo">Partner logo</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="section" id="features">
+    <!-- TWO SIDES -->
+    <section class="section" aria-labelledby="sides-title">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">What MemoryCare does</p>
-          <h2>Small helps that make a big difference</h2>
-          <p>Each feature is designed to be simple, calm and easy to understand, with no clutter and no confusing menus.</p>
+          <p class="eyebrow">One app, two sides of care</p>
+          <h2 id="sides-title">A simple view for them. <br>A complete view for you.</h2>
         </header>
-
-        <ul class="feature-grid">
-          <li class="feature">
-            <span class="feature-icon" aria-hidden="true">
+        <div class="sides">
+          <a class="side-card reveal" href="#for-them">
+            <span class="side-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3.5 10.5 12 4l8.5 6.5V20a1 1 0 0 1-1 1h-5v-6h-5v6h-5a1 1 0 0 1-1-1v-9.5z"/></svg>
+            </span>
+            <h3>For the person living with dementia</h3>
+            <p>One calm home screen with what’s next, spoken reminders, a daily check-in, gentle brain games and a big SOS button.</p>
+            <ul class="tag-list" aria-label="Sections in the app">
+              <li>Home</li><li>Tasks</li><li>Call</li><li>Check-in</li><li>Games</li>
+            </ul>
+            <span class="side-link">See their view <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="side-card reveal" href="#for-family">
+            <span class="side-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.6c2.6-.2 4.7 1.4 5.5 4.4"/></svg>
             </span>
-            <h3>Familiar faces</h3>
-            <p>Photos of loved ones with their name and relationship: “This is Sarah, your daughter.” One tap to call them.</p>
-          </li>
-          <li class="feature">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            </span>
-            <h3>Gentle reminders</h3>
-            <p>Friendly spoken and on-screen prompts for medication, meals, appointments and the day’s plans.</p>
-          </li>
-          <li class="feature">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
-            </span>
-            <h3>Today at a glance</h3>
-            <p>A clear, always-on view of the day, date, time and what’s happening next, to help ease disorientation.</p>
-          </li>
-          <li class="feature">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2"/><circle cx="9" cy="9.5" r="1.8"/><path d="m3.5 17 5-4.5 4 3.5 3-2.5 5 4"/></svg>
-            </span>
-            <h3>Memory book</h3>
-            <p>A shared album of photos, voice notes and stories that family can add to, for reminiscing together.</p>
-          </li>
-          <li class="feature">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-            </span>
-            <h3>Safe at home &amp; out</h3>
-            <p>Optional location sharing and a large “Help me get home” button that guides the way and alerts family.</p>
-          </li>
-          <li class="feature">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M9 18V6l11-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg>
-            </span>
-            <h3>Calming moments</h3>
-            <p>Favorite music, soothing sounds and simple breathing guides for moments of anxiety or restlessness.</p>
-          </li>
-        </ul>
+            <h3>For family and caregivers</h3>
+            <p>Set up medicines and routines from your own phone, see how they’re doing in real time, and know they’re safe.</p>
+            <ul class="tag-list" aria-label="Sections in the app">
+              <li>Dashboard</li><li>Meds</li><li>Contacts</li><li>Location</li><li>Insights</li>
+            </ul>
+            <span class="side-link">See your view <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- SPLIT: PATIENT EXPERIENCE -->
-    <section class="section section-tint">
-      <div class="container split">
-        <div class="split-media">
-          <div class="ph ph-phone" role="img" aria-label="Placeholder: Familiar faces screen">
-            <span>App screenshot<small>Familiar faces · 1170 × 2532</small></span>
+    <!-- SHOWCASE: FOR THEM -->
+    <section class="section section-tint" id="for-them" aria-labelledby="them-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">For them</p>
+          <h2 id="them-title">Everything they need, nothing they don’t</h2>
+          <p>Large text, plain words and one clear action per screen, designed for good days and harder ones.</p>
+        </header>
+
+        <div class="showcase" data-tabs>
+          <div class="showcase-tabs" role="tablist" aria-label="Features for the person living with dementia">
+            <button class="tab" role="tab" id="tab-home" aria-controls="panel-home" aria-selected="true">
+              <span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 10.5 12 4l8.5 6.5V20a1 1 0 0 1-1 1h-5v-6h-5v6h-5a1 1 0 0 1-1-1v-9.5z"/></svg></span>
+              <span class="tab-text">
+                <strong>Their day at a glance</strong>
+                <span>The date, the weather, what’s up next and today’s medicines, all on one calm screen.</span>
+              </span>
+            </button>
+            <button class="tab" role="tab" id="tab-tasks" aria-controls="panel-tasks" aria-selected="false" tabindex="-1">
+              <span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></span>
+              <span class="tab-text">
+                <strong>Reminders that speak up</strong>
+                <span>Tasks and medicines are read aloud at the right time. One big button marks them done.</span>
+              </span>
+            </button>
+            <button class="tab" role="tab" id="tab-checkin" aria-controls="panel-checkin" aria-selected="false" tabindex="-1">
+              <span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></span>
+              <span class="tab-text">
+                <strong>Stay close, every day</strong>
+                <span>A daily check-in lets them share how they’re feeling (Great, Okay or Not good) with an optional note.</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="showcase-stage">
+            <div class="panel" role="tabpanel" id="panel-home" aria-labelledby="tab-home">
+              <img class="phone" src="assets/screens/home.webp" width="600" height="1264" loading="lazy" alt="Home screen with the date, weather, the next task, today's medications and an SOS button">
+            </div>
+            <div class="panel" role="tabpanel" id="panel-tasks" aria-labelledby="tab-tasks">
+              <img class="phone" src="assets/screens/tasks.webp" width="600" height="1258" loading="lazy" alt="Your tasks screen reading a Metformin reminder aloud, with Read aloud and Mark done buttons on each task">
+            </div>
+            <div class="panel" role="tabpanel" id="panel-checkin" aria-labelledby="tab-checkin">
+              <img class="phone" src="assets/screens/checkin.webp" width="600" height="1258" loading="lazy" alt="Daily check-in screen asking How are you doing today? with Great, Okay and Not good options and a note">
+            </div>
           </div>
         </div>
-        <div class="split-copy">
-          <p class="eyebrow">Designed for the person</p>
-          <h2>Simple enough to use on a hard day</h2>
-          <p>We designed MemoryCare around how people with dementia actually experience technology. Every screen has one clear purpose, big buttons and plain words.</p>
-          <ul class="check-list">
-            <li>Extra-large text and high-contrast colors</li>
-            <li>Read-aloud for every screen</li>
-            <li>No ads, pop-ups or surprise updates to the layout</li>
-            <li>Works with tablets, phones and smart displays</li>
+      </div>
+    </section>
+
+    <!-- SAFETY -->
+    <section class="section green-band safety" id="safety" aria-labelledby="safety-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Safety</p>
+          <h2 id="safety-title">Help is never far away</h2>
+          <p>When something goes wrong, MemoryCare makes it easy to reach the people who can help, with no menus to find.</p>
+        </header>
+
+        <div class="safety-grid">
+          <figure class="safety-card reveal">
+            <img class="phone" src="assets/screens/sos.webp" width="600" height="1258" loading="lazy" alt="Help is on the way: caregivers were notified with your location. Sarah (daughter) notified just now. Buttons to call emergency services or cancel">
+            <figcaption>
+              <h3>Help is one tap away</h3>
+              <p>One press of SOS alerts family with their location. Emergency services are one more tap, and “I am OK” cancels it.</p>
+            </figcaption>
+          </figure>
+          <figure class="safety-card reveal">
+            <img class="phone" src="assets/screens/fall.webp" width="600" height="1258" loading="lazy" alt="Are you OK? A possible fall was detected. Buttons for I'm OK and I need help, with caregivers alerted in 12 seconds">
+            <figcaption>
+              <h3>Fall alerts, automatically</h3>
+              <p>If a possible fall is detected, MemoryCare checks in with them first. If there’s no reply, caregivers are told.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <ol class="flow" aria-label="What happens after a possible fall">
+          <li><span class="flow-num">1</span>A possible fall is detected</li>
+          <li><span class="flow-num">2</span>They’re asked “Are you OK?”</li>
+          <li><span class="flow-num">3</span>No reply? Caregivers are alerted</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SHOWCASE: FOR FAMILY -->
+    <section class="section" id="for-family" aria-labelledby="family-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">For families &amp; caregivers</p>
+          <h2 id="family-title">Peace of mind, from anywhere</h2>
+          <p>See tasks, mood and activity update in real time, without hovering, whether you live next door or across the country.</p>
+        </header>
+
+        <div class="showcase showcase-reverse" data-tabs>
+          <div class="showcase-tabs" role="tablist" aria-label="Features for family and caregivers">
+            <button class="tab" role="tab" id="tab-dashboard" aria-controls="panel-dashboard" aria-selected="true">
+              <span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg></span>
+              <span class="tab-text">
+                <strong>A dashboard for the day</strong>
+                <span>Task completion, their last check-in, wellbeing this week and a daily AI summary.</span>
+              </span>
+            </button>
+            <button class="tab" role="tab" id="tab-meds" aria-controls="panel-meds" aria-selected="false" tabindex="-1">
+              <span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/></svg></span>
+              <span class="tab-text">
+                <strong>Set up care in minutes</strong>
+                <span>Add medications, doses and times from your own phone. If a dose is missed, you’re alerted after 15 minutes.</span>
+              </span>
+            </button>
+            <button class="tab" role="tab" id="tab-location" aria-controls="panel-location" aria-selected="false" tabindex="-1">
+              <span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+              <span class="tab-text">
+                <strong>Know they’re safe</strong>
+                <span>Check their live location whenever you need to, and open it straight in Maps.</span>
+              </span>
+            </button>
+            <button class="tab" role="tab" id="tab-insights" aria-controls="panel-insights" aria-selected="false" tabindex="-1">
+              <span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 20v-6M10 20V9M15 20v-8M20 20V5"/></svg></span>
+              <span class="tab-text">
+                <strong>Notice changes over time</strong>
+                <span>Brain game scores, active days and 7-day trends, shared with the family.</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="showcase-stage">
+            <div class="panel" role="tabpanel" id="panel-dashboard" aria-labelledby="tab-dashboard">
+              <img class="phone" src="assets/screens/dashboard.webp" width="600" height="1258" loading="lazy" alt="Caregiver dashboard for Mary Smith: 86% task completion, last check-in 2 hours ago, wellbeing this week and recent events">
+            </div>
+            <div class="panel" role="tabpanel" id="panel-meds" aria-labelledby="tab-meds">
+              <img class="phone" src="assets/screens/medications.webp" width="600" height="1258" loading="lazy" alt="Medications list with Amlodipine, Metformin and Donepezil, their times and voice reminders">
+            </div>
+            <div class="panel" role="tabpanel" id="panel-location" aria-labelledby="tab-location">
+              <img class="phone" src="assets/screens/location.webp" width="600" height="1258" loading="lazy" alt="Live location map for Mary Smith, last seen just now, accurate to 12 meters, with Open in Maps button">
+            </div>
+            <div class="panel" role="tabpanel" id="panel-insights" aria-labelledby="tab-insights">
+              <img class="phone" src="assets/screens/insights.webp" width="600" height="1258" loading="lazy" alt="Cognitive insights: 9 sessions, 78% average score, 5 of 7 active days, a 7-day score trend and scores by game">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAIN GAMES -->
+    <section class="section section-tint" id="games" aria-labelledby="games-title">
+      <div class="container games">
+        <div class="games-copy">
+          <p class="eyebrow">Brain games</p>
+          <h2 id="games-title">Seven daily brain games</h2>
+          <p class="games-lead">Gentle, familiar games to keep the mind active. Scores and trends are shared with family, so small changes don’t go unnoticed.</p>
+
+          <ul class="game-grid">
+            <li class="game" style="--c:#159a86;--c-soft:#e1f4f0">
+              <span class="game-icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="fill"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></span>
+              <span><strong>Memory Match</strong>Find matching pairs</span>
+            </li>
+            <li class="game" style="--c:#3b78d8;--c-soft:#e7effc">
+              <span class="game-icon game-icon-text" aria-hidden="true">Aa</span>
+              <span><strong>Word Recall</strong>Remember the words</span>
+            </li>
+            <li class="game" style="--c:#c98a1c;--c-soft:#faf0de">
+              <span class="game-icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="fill"><circle cx="7" cy="6" r="1.6"/><circle cx="12" cy="6" r="1.6"/><circle cx="17" cy="6" r="1.6"/><circle cx="7" cy="11" r="1.6"/><circle cx="12" cy="11" r="1.6"/><circle cx="17" cy="11" r="1.6"/><circle cx="7" cy="16" r="1.6"/><circle cx="12" cy="16" r="1.6"/><circle cx="17" cy="16" r="1.6"/><circle cx="12" cy="20.5" r="1.6"/></svg></span>
+              <span><strong>Number Sequence</strong>Repeat the numbers</span>
+            </li>
+            <li class="game" style="--c:#d9473b;--c-soft:#fbe5e2">
+              <span class="game-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.8 1.8-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.9.8-1.7 1.7-1.7h2A4.5 4.5 0 0 0 21 10.7C21 6.5 17 3 12 3z"/><circle cx="7.5" cy="11" r="1.3" class="dot"/><circle cx="10" cy="7" r="1.3" class="dot"/><circle cx="14.5" cy="7" r="1.3" class="dot"/></svg></span>
+              <span><strong>Colour Pattern</strong>Copy the pattern</span>
+            </li>
+            <li class="game" style="--c:#7a55c9;--c-soft:#efe9fa">
+              <span class="game-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
+              <span><strong>Daily Orientation</strong>Day, month &amp; season</span>
+            </li>
+            <li class="game" style="--c:#138fa3;--c-soft:#e0f2f5">
+              <span class="game-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 6.5C10 5 7 4.5 3.5 5v13.5c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5zM12 6.5V20"/></svg></span>
+              <span><strong>Story Sequence</strong>Put the story in order</span>
+            </li>
+            <li class="game game-wide" style="--c:#c4448a;--c-soft:#fbe6f0">
+              <span class="game-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg></span>
+              <span><strong>Odd One Out</strong>Spot the odd word</span>
+            </li>
           </ul>
+        </div>
+        <div class="games-media">
+          <img class="phone reveal" src="assets/screens/games.webp" width="600" height="1258" loading="lazy" alt="Brain Games screen: pick a game to play from seven games">
         </div>
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="section" id="how-it-works">
+    <section class="section" id="how-it-works" aria-labelledby="how-title">
       <div class="container">
         <header class="section-head">
           <p class="eyebrow">How it works</p>
-          <h2>Up and running in an afternoon</h2>
+          <h2 id="how-title">Up and running in minutes</h2>
         </header>
         <ol class="steps">
-          <li class="step">
+          <li class="step reveal">
             <span class="step-num" aria-hidden="true">1</span>
-            <h3>A family member sets it up</h3>
-            <p>Download the app, create a care circle and add the people, photos and routines that matter.</p>
+            <h3>Set up from your phone</h3>
+            <p>A family member or caregiver creates the account and adds the people who should be alerted.</p>
           </li>
-          <li class="step">
+          <li class="step reveal">
             <span class="step-num" aria-hidden="true">2</span>
-            <h3>Personalize together</h3>
-            <p>Choose a calm layout, record familiar voices for reminders, and add favorite songs and stories.</p>
+            <h3>Add medicines and routines</h3>
+            <p>Enter medications, doses and times, plus everyday tasks like a morning walk or calling David.</p>
           </li>
-          <li class="step">
+          <li class="step reveal">
             <span class="step-num" aria-hidden="true">3</span>
-            <h3>Everyday support, quietly</h3>
-            <p>MemoryCare guides the day, and the care circle stays in the loop with gentle updates.</p>
+            <h3>They’re guided, you’re informed</h3>
+            <p>They get gentle spoken prompts through the day. You see what’s done, and hear when something isn’t.</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- VIDEO -->
-    <section class="section section-tint" id="video">
-      <div class="container narrow">
-        <header class="section-head">
-          <p class="eyebrow">See it in action</p>
-          <h2>A 2-minute tour of MemoryCare</h2>
-        </header>
-        <div class="ph ph-video" role="img" aria-label="Placeholder: product tour video">
-          <span class="play" aria-hidden="true"></span>
-          <span>Product video<small>16 : 9 · embed or &lt;video&gt;</small></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CAREGIVERS -->
-    <section class="section" id="caregivers">
-      <div class="container split split-reverse">
-        <div class="split-media">
-          <div class="ph ph-dashboard" role="img" aria-label="Placeholder: caregiver dashboard">
-            <span>Caregiver dashboard<small>Screenshot · 16 : 10</small></span>
-          </div>
-        </div>
-        <div class="split-copy">
-          <p class="eyebrow">For families &amp; caregivers</p>
-          <h2>Peace of mind, without hovering</h2>
-          <p>The MemoryCare companion app lets the whole care circle share the load and stay informed, while respecting the dignity and independence of the person they care for.</p>
-          <ul class="check-list">
-            <li>See when reminders are confirmed or missed</li>
-            <li>Update routines and photos remotely</li>
-            <li>Share notes and tasks across the care circle</li>
-            <li>Get alerts only when something needs attention</li>
-          </ul>
-          <a class="btn btn-ghost" href="#download">Invite your family</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section section-tint" aria-labelledby="stories-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Stories</p>
-          <h2 id="stories-title">From families using MemoryCare</h2>
-        </header>
-        <ul class="quote-grid">
-          <li class="quote">
-            <blockquote>“Placeholder testimonial. A short quote from a family member about how MemoryCare helped their loved one feel more at ease.”</blockquote>
-            <div class="quote-by">
-              <span class="ph ph-avatar" role="img" aria-label="Placeholder: portrait"></span>
-              <span><strong>Name Surname</strong><br>Daughter &amp; caregiver</span>
-            </div>
-          </li>
-          <li class="quote">
-            <blockquote>“Placeholder testimonial. A short quote about staying connected across distance and sharing the care load as a family.”</blockquote>
-            <div class="quote-by">
-              <span class="ph ph-avatar" role="img" aria-label="Placeholder: portrait"></span>
-              <span><strong>Name Surname</strong><br>Son, lives interstate</span>
-            </div>
-          </li>
-          <li class="quote">
-            <blockquote>“Placeholder testimonial. A short quote from a care professional about routine, independence and wellbeing.”</blockquote>
-            <div class="quote-by">
-              <span class="ph ph-avatar" role="img" aria-label="Placeholder: portrait"></span>
-              <span><strong>Name Surname</strong><br>Dementia care nurse</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- PRIVACY -->
-    <section class="section">
-      <div class="container privacy">
-        <span class="privacy-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.4 7.5 9.5 4.4-1.1 7.5-4.9 7.5-9.5V6L12 3z"/><path d="m8.8 12 2.3 2.3 4.2-4.6"/></svg>
-        </span>
-        <div>
-          <h2>Private by design</h2>
-          <p>Personal photos, routines and health information belong to your family. Data is encrypted, never sold, and only shared with the people you invite. <a href="#">Read our privacy approach</a>.</p>
-        </div>
-      </div>
-    </section>
-
     <!-- FAQ -->
-    <section class="section section-tint" id="faq">
+    <section class="section section-tint" id="faq" aria-labelledby="faq-title">
       <div class="container narrow">
         <header class="section-head">
           <p class="eyebrow">Questions</p>
-          <h2>Frequently asked questions</h2>
+          <h2 id="faq-title">Frequently asked questions</h2>
         </header>
         <div class="faq">
           <details>
             <summary>Who is MemoryCare for?</summary>
-            <p>MemoryCare is for people living with early- to mid-stage dementia or memory loss, and the family members and caregivers who support them.</p>
+            <p>MemoryCare is for people living with dementia or memory loss, and for the family members and caregivers who support them.</p>
           </details>
           <details>
             <summary>Does the person with dementia need to set anything up?</summary>
-            <p>No. A family member or caregiver handles setup from their own phone. The person using MemoryCare simply sees a calm, ready-to-use home screen.</p>
+            <p>No. A family member or caregiver adds medications, schedules and contacts from their own phone. The person using MemoryCare simply sees a calm, ready-to-use home screen.</p>
+          </details>
+          <details>
+            <summary>What happens when the SOS button is pressed?</summary>
+            <p>Their caregivers are notified straight away with their location. The screen also offers a one-tap button to call emergency services, and an “I am OK, cancel” button if it was pressed by mistake.</p>
+          </details>
+          <details>
+            <summary>How do fall alerts work?</summary>
+            <p>If a possible fall is detected, MemoryCare asks “Are you OK?” with two large buttons: “I’m OK” and “I need help”. If there’s no reply before the countdown ends, caregivers are alerted.</p>
+          </details>
+          <details>
+            <summary>Who can see their information?</summary>
+            <p>Check-ins, tasks, game scores and location are shared with the caregivers in their care circle. Read our <a href="privacy.html">Privacy Policy</a> for the details.</p>
           </details>
           <details>
             <summary>What devices does it work on?</summary>
-            <p>MemoryCare works on iPhone, iPad and Android phones and tablets. A large tablet on a stand works especially well at home.</p>
+            <p>MemoryCare is available for iPhone and Android phones.</p>
           </details>
           <details>
             <summary>How much does it cost?</summary>
-            <p>Placeholder: pricing details to be confirmed.</p>
+            <p>Pricing details coming soon.</p>
           </details>
           <details>
             <summary>Is MemoryCare a medical device?</summary>
-            <p>No. MemoryCare is a daily-living support tool and does not diagnose or treat any condition. Always follow the advice of your health professionals.</p>
+            <p>No. MemoryCare is a daily-living support tool and does not diagnose or treat any condition. It doesn’t replace emergency services. Always follow the advice of your health professionals.</p>
           </details>
         </div>
       </div>
     </section>
 
     <!-- DOWNLOAD CTA -->
-    <section class="cta" id="download">
+    <section class="cta green-band" id="download" aria-labelledby="cta-title">
       <div class="container cta-inner">
-        <div>
-          <h2>Bring a little more calm to every day</h2>
-          <p>Free to download. Set up in minutes by someone who cares.</p>
+        <div class="cta-copy">
+          <span class="brand-mark brand-mark-lg" aria-hidden="true"><svg><use href="#i-heart"/></svg></span>
+          <h2 id="cta-title">Bring a little calm to every day</h2>
+          <p>Download MemoryCare and set up care in minutes, from your own phone.</p>
+          <div class="store-buttons">
+            <!-- TODO: replace with official App Store / Google Play badges and store links -->
+            <a class="store-btn" href="#">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>
+              <span><small>Download on the</small>App Store</span>
+            </a>
+            <a class="store-btn" href="#">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l9-8.5-9-8.5z"/><path d="m14 12 4.5-3M14 12l4.5 3"/></svg>
+              <span><small>Get it on</small>Google Play</span>
+            </a>
+          </div>
         </div>
-        <div class="store-badges">
-          <!-- PLACEHOLDER: replace with official App Store / Google Play badges + links -->
-          <a class="ph ph-badge" href="#" aria-label="Download on the App Store (link coming soon)">App Store badge</a>
-          <a class="ph ph-badge" href="#" aria-label="Get it on Google Play (link coming soon)">Google Play badge</a>
+        <div class="cta-phone" aria-hidden="true">
+          <img class="phone" src="assets/screens/checkin.webp" width="600" height="1258" loading="lazy" alt="">
         </div>
       </div>
     </section>
@@ -327,25 +405,26 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a class="brand" href="#top" aria-label="MemoryCare home">
-          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-mark" aria-hidden="true"><svg><use href="#i-heart"/></svg></span>
           <span class="brand-name">MemoryCare</span>
         </a>
-        <p>Gentle support for everyday life with dementia.</p>
+        <p>Their day, made simple.</p>
       </div>
       <nav class="footer-nav" aria-label="Footer">
         <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#caregivers">For caregivers</a></li>
+          <li><a href="#for-them">Features</a></li>
+          <li><a href="#safety">Safety</a></li>
+          <li><a href="#for-family">For families</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="mailto:hello@example.com">Contact</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="mailto:memorycareau@gmail.com">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="container footer-legal">
       <p>&copy; <span id="year">2026</span> MemoryCare. MemoryCare is not a medical device and does not provide medical advice.</p>
-      <p>If you are worried about someone’s safety, contact your local emergency services.</p>
+      <p>In an emergency, call 000.</p>
     </div>
   </footer>
 

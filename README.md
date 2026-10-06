@@ -8,31 +8,29 @@ python3 -m http.server 8000
 
 ## Files
 
-- `index.html` — page content
-- `styles.css` — design tokens (colors, type, spacing) at the top; light and dark themes
-- `script.js` — mobile menu, "larger text" toggle, footer year
-- `assets/` — put images, video and logos here
+- `index.html` — home page
+- `privacy.html`, `terms.html` — Privacy Policy and Terms of Use (Australian law)
+- `styles.css` — brand tokens (greens, mint, type) at the top; light and dark themes
+- `script.js` — mobile menu, "larger text" toggle, feature tabs, scroll fade-in, footer year
+- `assets/screens/` — phone mockups cut from the App Store screenshots (600px wide WebP, transparent corners)
+- `assets/favicon.svg` — green heart app icon
 
-## Replacing placeholders
+## Updating screenshots
 
-Every placeholder uses the `ph` class, so search `index.html` for `class="ph` to find them all.
+Each file in `assets/screens/` is the full iPhone (bezel included) with a transparent background, so it sits on any section color. To swap one, export a new screen at the same name and size (600 × ~1258).
 
-| Placeholder | Suggested asset |
+| File | Used in |
 | --- | --- |
-| Hero phone (`ph-phone`) | App home screen screenshot, 1170 × 2532 |
-| Hero photo (`ph-photo`) | Lifestyle photo, 4:3 |
-| Partner logos (`ph-logo`) | SVG/PNG logos, ~140 × 48 |
-| Familiar faces phone (`ph-phone`) | App screenshot, 1170 × 2532 |
-| Video (`ph-video`) | 16:9 `<video>` or YouTube/Vimeo embed |
-| Caregiver dashboard (`ph-dashboard`) | Screenshot, 16:10 |
-| Testimonial avatars (`ph-avatar`) | Square portraits |
-| Store badges (`ph-badge`) | Official App Store / Google Play badges |
-| Logo (`brand-mark`) and `assets/favicon.svg` | Final logo |
+| `home.webp` | Hero, "For them" tabs |
+| `dashboard.webp` | Hero (back phone), "For families" tabs |
+| `tasks.webp`, `checkin.webp` | "For them" tabs (`checkin` also in the download section) |
+| `sos.webp`, `fall.webp` | Safety section |
+| `medications.webp`, `location.webp`, `insights.webp` | "For families" tabs |
+| `games.webp` | Brain games section |
 
-Swap a placeholder `<div>` for an `<img>` that keeps the same size class, e.g.:
+## Still to do
 
-```html
-<img class="ph-phone" src="assets/home-screen.png" alt="MemoryCare home screen showing today's date and next reminder">
-```
-
-Placeholder copy to update: testimonials, pricing FAQ, partner logos, privacy/terms links, and the contact email (`hello@example.com`).
+- Replace the App Store / Google Play buttons with the official badges and real store links (marked `TODO` in `index.html`).
+- Pricing answer in the FAQ, and the "Fees and purchases" section of `terms.html` once pricing is set.
+- Legal pages: fill in every highlighted `fill-in` (legal entity name, ABN, governing state/territory, overseas data locations), and check each `<!-- REVIEW: ... -->` comment in `privacy.html` and `terms.html`. Search for `fill-in` and `REVIEW` to find them all.
+- Have both legal pages reviewed by an Australian lawyer before launch.
