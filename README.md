@@ -14,6 +14,8 @@ python3 -m http.server 8000
 - `script.js` — mobile menu, "larger text" toggle, feature tabs, scroll fade-in, footer year
 - `assets/screens/` — phone mockups cut from the App Store screenshots (600px wide WebP, transparent corners)
 - `assets/favicon.svg` — green heart app icon
+- `sitemap.xml`, `robots.txt` — for Google Search Console (update `<lastmod>` when a page changes; add new pages to the sitemap)
+- `assets/og-image.png` — 1200 × 630 social link preview (Open Graph / X card), used by all pages
 
 ## Updating screenshots
 

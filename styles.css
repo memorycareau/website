@@ -850,3 +850,17 @@ img { max-width: 100%; }
 }
 
 .toc-title::-webkit-details-marker { display: none; }
+
+/* Social icon buttons (footer) */
+.social { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.social a {
+  display: grid;
+  place-items: center;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--soft);
+  color: var(--ink);
+  transition: background-color .15s, color .15s, transform .15s;
+}
+.social a:hover { background: var(--green); color: #fff; transform: translateY(-2px); }
+.social svg { width: 22px; height: 22px; fill: currentColor; }
