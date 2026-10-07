@@ -331,7 +331,7 @@ a:hover { text-decoration-thickness: 3px; }
 /* Screenshot with its caption beside it (wide) or below it (four-up) */
 .screens { display: grid; gap: var(--s-8) var(--s-7); }
 .screen img { width: min(15rem, 66vw); }
-@media (max-width: 47.99rem) { .screen img { margin-bottom: var(--s-5); } }
+@media (max-width: 47.99rem) { .screen img { margin-inline: auto; margin-bottom: var(--s-5); } }
 .screen h3 { font-size: clamp(1.5rem, 2.4vw, 1.75rem); margin-bottom: var(--s-3); }
 .screen p { color: var(--muted); }
 
@@ -350,6 +350,7 @@ a:hover { text-decoration-thickness: 3px; }
   .screens-four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 .screens-four .screen img { width: min(15rem, 66vw); margin-bottom: var(--s-5); }
+@media (max-width: 47.99rem) { .screens-four .screen img { margin-inline: auto; } }
 .screens-four .screen figcaption { padding-top: var(--s-4); border-top: 3px solid var(--ink); }
 
 /* Numbered steps reuse the key style */
@@ -360,6 +361,7 @@ a:hover { text-decoration-thickness: 3px; }
 @media (min-width: 60rem) { .games { grid-template-columns: minmax(0, 1fr) 16rem; gap: var(--s-9); } }
 .games .section-head { margin-bottom: var(--s-5); }
 .games-media img { width: min(16rem, 70vw); }
+@media (max-width: 59.99rem) { .games-media img { margin-inline: auto; } }
 
 /* Games list with dotted leaders, like a printed index */
 .games-list { max-width: 36rem; }
