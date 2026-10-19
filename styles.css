@@ -44,6 +44,8 @@
   --button: #1a7a60;
   --on-button: #ffffff;
   --focus: #b35c00;
+  --input: #ffffff;
+  --error: #b3261e;
 
   /* Type */
   --serif: "Literata", Georgia, "Times New Roman", serif;
@@ -79,6 +81,8 @@
     --button: #7fd1b4;
     --on-button: #121614;
     --focus: #ffb454;
+    --input: #0c100e;
+    --error: #ff8a7a;
   }
 }
 
@@ -270,15 +274,15 @@ a:hover { text-decoration-thickness: 3px; }
   font-size: 1.1875rem;
 }
 
-.store-badges {
+.opening-cta {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--s-4);
+  gap: var(--s-4) var(--s-5);
   margin-top: var(--s-6);
 }
-.store-badges img { height: 50px; width: auto; }
-.store-badges a { display: block; }
+.opening-cta p { max-width: 30ch; margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.45; }
+.button-large { min-height: 56px; padding: 0 var(--s-5); font-size: 1.0625rem; }
 
 /* Both sides of the app, side by side */
 .opening-phones {
@@ -419,16 +423,42 @@ a:hover { text-decoration-thickness: 3px; }
 .qa p { color: var(--muted); }
 
 /* ---------- Download ---------- */
-.download {
+.waitlist {
   padding-block: var(--s-9);
   border-top: 1px solid var(--rule);
   background: var(--band);
 }
-.download-grid { display: grid; gap: var(--s-6); align-items: center; }
-@media (min-width: 60rem) { .download-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s-8); } }
-.download h2 { font-size: clamp(2.25rem, 5vw, 3.75rem); font-weight: 700; }
-.download .store-badges { margin-top: 0; margin-bottom: var(--s-5); }
-.download p { color: var(--muted); max-width: 44ch; }
+.waitlist-grid { display: grid; gap: var(--s-6); align-items: start; }
+@media (min-width: 60rem) { .waitlist-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s-8); } }
+.waitlist h2 { font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 700; margin-bottom: var(--s-4); }
+.waitlist-grid > div > p { color: var(--muted); max-width: 44ch; font-size: 1.1875rem; }
+
+.waitlist-form label { display: block; margin-bottom: var(--s-2); font-weight: 700; }
+.waitlist-row { display: flex; flex-wrap: wrap; gap: var(--s-3); }
+.waitlist-row input {
+  flex: 1 1 16rem;
+  min-width: 0;
+  min-height: 56px;
+  padding: 0 var(--s-4);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--input);
+  color: var(--ink);
+  font: 400 1.125rem/1 var(--sans);
+}
+.waitlist-row input[aria-invalid="true"] { border-color: var(--error); }
+.waitlist-row .button { flex: 0 0 auto; }
+@media (max-width: 30rem) { .waitlist-row .button { flex: 1 1 100%; } }
+.waitlist-form button[disabled] { cursor: progress; }
+
+.waitlist-status { min-height: 1.6em; margin: var(--s-3) 0 0; font-weight: 700; }
+.waitlist-status.is-error { color: var(--error); }
+.waitlist-status.is-success { color: var(--link); }
+.waitlist-note { color: var(--muted); font-size: 0.9375rem; max-width: 52ch; }
+
+/* After a successful signup the form is replaced by the confirmation */
+.waitlist-form.is-done .waitlist-row,
+.waitlist-form.is-done label { display: none; }
 
 /* ---------- Colophon (footer) ---------- */
 .colophon {
@@ -647,3 +677,7 @@ a:hover { text-decoration-thickness: 3px; }
 @media print {
   .motion *, .motion *::before { transform: none !important; opacity: 1 !important; }
 }
+
+/* The confirmation is focused so screen readers announce it; it isn't
+   interactive, so it doesn't need a focus ring */
+.waitlist-status:focus { outline: none; }

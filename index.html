@@ -88,7 +88,7 @@
           <li><a href="index.html#questions">FAQ</a></li>
         </ul>
         <button class="text-size" type="button" aria-pressed="false">Larger text</button>
-        <a class="button" href="index.html#download">Download</a>
+        <a class="button" href="index.html#waitlist">Join the waitlist</a>
       </nav>
     </div>
   </header>
@@ -100,10 +100,9 @@
         <div class="opening-copy">
           <h1>A daily routine app for people living with dementia, and the family who help them.</h1>
           <p class="lede">Tasks, medicines and help on one easy-to-read screen. Family set it up from their own phone and can see how the day is going.</p>
-          <div class="store-badges">
-            <!-- TODO: link each badge to the app's store listing -->
-            <a href="#download"><img src="assets/badges/app-store.svg" width="150" height="50" alt="Download on the App Store"></a>
-            <a href="#download"><img src="assets/badges/google-play.png" width="168" height="50" alt="Get it on Google Play"></a>
+          <div class="opening-cta">
+            <a class="button button-large" href="#waitlist">Join the waitlist</a>
+            <p>Coming soon to iPhone and Android.</p>
           </div>
         </div>
 
@@ -278,29 +277,36 @@
             <p>The caregivers you add. Our <a href="privacy.html">Privacy Policy</a> explains what we collect and who else handles it.</p>
           </div>
           <div class="qa">
-            <h3>What phones does it work on?</h3>
-            <p>iPhone and Android.</p>
+            <h3>When can I get it?</h3>
+            <p>MemoryCare is being reviewed and tested now. <a href="#waitlist">Join the waitlist</a> and we’ll email you the day it’s available on iPhone and Android.</p>
           </div>
           <div class="qa">
             <h3>How much does it cost?</h3>
-            <p>It’s free to download. Pricing details are coming soon.</p>
+            <p>It will be free to download. Pricing details are coming soon, and the waitlist will hear first.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Download -->
-    <section class="download" id="download" aria-labelledby="download-title">
-      <div class="container download-grid">
-        <h2 id="download-title">Free on iPhone and Android.</h2>
+    <!-- Waitlist: signups go to Kit (kit.com), which stores the list and sends the emails -->
+    <section class="waitlist" id="waitlist" aria-labelledby="waitlist-title">
+      <div class="container waitlist-grid">
         <div>
-          <div class="store-badges">
-            <!-- TODO: link each badge to the app's store listing -->
-            <a href="#download"><img src="assets/badges/app-store.svg" width="150" height="50" alt="Download on the App Store"></a>
-            <a href="#download"><img src="assets/badges/google-play.png" width="168" height="50" alt="Get it on Google Play"></a>
-          </div>
-          <p>Questions before you start? Email <a href="mailto:memorycareau@gmail.com">memorycareau@gmail.com</a> and we’ll get back to you.</p>
+          <h2 id="waitlist-title">Get an email the day MemoryCare launches.</h2>
+          <p>MemoryCare is being reviewed and tested right now. Leave your email and we’ll tell you the moment it’s ready to download.</p>
         </div>
+
+        <!-- TODO: replace KIT_FORM_ID with the number from your Kit form's embed code
+             (Kit > Grow > Landing Pages & Forms > your form > Publish > HTML). -->
+        <form class="waitlist-form" action="https://app.kit.com/forms/10065927/subscriptions" method="post" novalidate>
+          <label for="waitlist-email">Email address</label>
+          <div class="waitlist-row">
+            <input id="waitlist-email" name="email_address" type="email" autocomplete="email" inputmode="email" required aria-describedby="waitlist-note waitlist-status">
+            <button class="button button-large" type="submit">Join the waitlist</button>
+          </div>
+          <p class="waitlist-status" id="waitlist-status" role="status" aria-live="polite"></p>
+          <p class="waitlist-note" id="waitlist-note">We’ll email you on launch day, and send the occasional MemoryCare newsletter. You can unsubscribe at any time. See our <a href="privacy.html#waitlist-info">Privacy Policy</a>.</p>
+        </form>
       </div>
     </section>
   </main>
