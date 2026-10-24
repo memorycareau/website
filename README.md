@@ -34,8 +34,7 @@ Each file in `assets/screens/` is the full iPhone (bezel included) with a transp
 
 - Connect the waitlist to Kit (see below). Until then the form tells visitors it isn't connected yet.
 - At launch: swap the "Join the waitlist" buttons back to the App Store and Google Play badges in `assets/badges/`, linked to the real store listings.
-- Pricing answer in the FAQ, and the "Fees and purchases" section of `terms.html` once pricing is set.
-- Legal pages: fill in every highlighted `fill-in` (legal entity name, ABN, governing state/territory, overseas data locations), and check each `<!-- REVIEW: ... -->` comment in `privacy.html` and `terms.html`. Search for `fill-in` and `REVIEW` to find them all.
+- Legal pages: check each `<!-- REVIEW: ... -->` comment in `privacy.html` and `terms.html` (search for `REVIEW`).
 - Have both legal pages reviewed by an Australian lawyer before launch.
 
 ## Waitlist (Kit)

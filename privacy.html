@@ -67,7 +67,7 @@
     <header class="page-head">
       <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="page-meta">Effective 7 October 2026. Last updated 19 October 2026.</p>
+        <p class="page-meta">Effective 7 October 2026. Last updated 24 October 2026.</p>
       </div>
     </header>
 
@@ -84,7 +84,7 @@
           <li><a href="#use">How we use it</a></li>
           <li><a href="#automated">Automated features and AI</a></li>
           <li><a href="#share">Who we share it with</a></li>
-          <li><a href="#overseas">Overseas storage</a></li>
+          <li><a href="#overseas">Where it’s stored</a></li>
           <li><a href="#security">Keeping it secure</a></li>
           <li><a href="#retention">How long we keep it</a></li>
           <li><a href="#rights">Access and correction</a></li>
@@ -103,7 +103,7 @@
           <h2 id="summary-title">The short version</h2>
           <ul>
             <li>MemoryCare handles <strong>health information</strong>, such as medications, mood check-ins, falls and brain game scores. We treat it as sensitive and only collect it with consent.</li>
-            <li>Information is shared with the <strong>caregivers in the care circle</strong> and the service providers who help us run the app. We <strong>never sell</strong> personal information.</li>
+            <li>App information is stored <strong>on the phone</strong> and in <strong>Google Firebase</strong>, our cloud database in Sydney, and shared with the <strong>caregivers in the care circle</strong>. We <strong>never sell</strong> personal information.</li>
             <li>You can <strong>see, correct or delete</strong> your information at any time by contacting us.</li>
             <li>If something goes wrong, you can complain to us and then to the <strong>Office of the Australian Information Commissioner</strong> (OAIC).</li>
           </ul>
@@ -112,8 +112,8 @@
 
         <section id="about">
           <h2>1. About this policy</h2>
-          <p>MemoryCare is operated by <span class="fill-in">[Legal entity name]</span> (ABN <span class="fill-in">[ABN]</span>) (“<strong>MemoryCare</strong>”, “<strong>we</strong>”, “<strong>us</strong>” or “<strong>our</strong>”). This policy explains how we collect, hold, use and disclose personal information when you use the MemoryCare mobile app, our website and any related services (together, the “<strong>Service</strong>”).</p>
-          <p>We are bound by the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs). Where they apply, we also comply with state and territory health records laws, such as the <em>Health Records Act 2001</em> (Vic) and the <em>Health Records and Information Privacy Act 2002</em> (NSW).</p>
+          <p>MemoryCare is a free app made by two people, <strong>James Tanudji and Amay Chowdhury</strong> (“<strong>MemoryCare</strong>”, “<strong>we</strong>”, “<strong>us</strong>” or “<strong>our</strong>”). This policy explains how we collect, hold, use and disclose personal information when you use the MemoryCare mobile app, our website and any related services (together, the “<strong>Service</strong>”).</p>
+          <p>We follow the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs). Where they apply, we also follow state and territory health records laws, such as the <em>Health Records Act 2001</em> (Vic) and the <em>Health Records and Information Privacy Act 2002</em> (NSW).</p>
           <p>In this policy:</p>
           <ul>
             <li>the <strong>person receiving care</strong> means the person living with dementia or memory loss who uses the MemoryCare home screen; and</li>
@@ -173,7 +173,6 @@
             <li><strong>From you</strong>, when you create an account, set up a profile or enter information in the app, or join the waitlist on our website.</li>
             <li><strong>From caregivers</strong>, who may enter information about the person receiving care and about other members of the care circle.</li>
             <li><strong>From the device</strong>, through permissions you grant, such as location, motion sensors, notifications and microphone or speaker for read-aloud features.</li>
-            <li><strong>From app stores</strong>, such as confirmation of a purchase or subscription (we don’t receive full card details).</li>
             <li><strong>When you contact us</strong>, for example by email.</li>
           </ul>
           <p>You can change device permissions at any time in your phone’s settings.</p>
@@ -203,10 +202,10 @@
           <ul>
             <li><strong>Fall alerts:</strong> motion data is analysed to detect a possible fall. If there’s no response to the “Are you OK?” prompt before the countdown ends, caregivers are alerted automatically.</li>
             <li><strong>Missed-dose alerts:</strong> if a medication isn’t marked as taken within a set time, caregivers are alerted automatically.</li>
-            <li><strong>AI insights:</strong> check-ins, task completion and game results are summarised by an artificial intelligence (AI) service to give caregivers a short daily summary, such as “Mood has been consistently positive this week”.</li>
+            <li><strong>AI insights:</strong> check-ins, task completion and game results are summarised automatically using artificial intelligence (AI) to give caregivers a short daily summary, such as “Mood has been consistently positive this week”.</li>
           </ul>
           <p>These features support caregivers. They do not make medical, financial or legal decisions, and they are not a diagnosis. AI summaries can be wrong or incomplete, and should always be checked against what you know about the person. If you have concerns about how an automated feature affected you, contact us.</p>
-          <!-- REVIEW: confirm which AI provider is used, where it processes data, and whether it is contractually barred from training on customer data. If so, say so here. -->
+          <!-- REVIEW: app data only goes through Firebase. If AI summaries run through Firebase (e.g. Firebase AI Logic / Gemini), that's covered by section 8. If any other AI provider is used, it must be named in sections 7 and 8. -->
         </section>
 
         <section id="share">
@@ -214,33 +213,39 @@
           <p>We <strong>do not sell</strong> personal information, and we don’t share it with advertisers or data brokers. We share it only with:</p>
           <ul>
             <li><strong>The care circle:</strong> caregivers linked to the person receiving care can see their tasks, medications, check-ins, alerts, location, game results and insights. Who is in the care circle is managed in the app.</li>
-            <li><strong>Service providers</strong> who help us run MemoryCare, such as cloud hosting and database providers, push notification services, AI service providers, email providers and crash reporting tools. Our waitlist and newsletter are run by <a href="https://kit.com/privacy" rel="noopener">Kit</a>, which stores the list and sends those emails. They may only use the information to provide services to us, and must protect it.</li>
-            <li><strong>Apple and Google</strong>, to the extent needed to distribute the app, deliver notifications and process in-app purchases.</li>
+            <li><strong>Google, through Firebase</strong>, which stores and syncs app information for us (see section 8). Google may only use it to provide Firebase to us. We don’t use any other company to store app information.</li>
+            <li><strong><a href="https://kit.com/privacy" rel="noopener">Kit</a></strong>, which runs our website waitlist and newsletter. Kit only receives the email addresses of people who join the waitlist, never app information.</li>
+            <li><strong>Apple and Google</strong>, to the extent needed to distribute the app and deliver notifications.</li>
             <li><strong>Emergency services</strong>, if you choose to call them from the app, or where we reasonably believe it’s necessary to lessen or prevent a serious threat to someone’s life, health or safety.</li>
             <li><strong>Professional advisers, regulators, courts and law enforcement</strong>, where required or authorised by law.</li>
-            <li><strong>A buyer or successor</strong> if our business is sold or restructured, provided they agree to protect the information in line with this policy.</li>
+            <li><strong>Anyone who takes over MemoryCare</strong> from us, or joins us in running it, provided they agree to protect the information in line with this policy.</li>
           </ul>
         </section>
 
         <section id="overseas">
-          <h2>8. Overseas storage and processing</h2>
-          <p>Some of our service providers store or process information outside Australia. At the date of this policy, information may be stored or processed in <span class="fill-in">[list countries, e.g. the United States]</span>.</p>
-          <p>Kit, our email provider, stores waitlist and newsletter details in the United States.</p>
+          <h2>8. Where your information is stored</h2>
+          <p>MemoryCare stores app information in two places:</p>
+          <ul>
+            <li><strong>On the phone.</strong> The app keeps information on the device it’s installed on. Information that is only stored on the phone isn’t sent to us.</li>
+            <li><strong>In Google Firebase</strong>, our cloud database. Firebase lets the person’s phone and their caregivers’ phones share accounts, tasks, medications, check-ins, alerts, location and game results.</li>
+          </ul>
+          <p>Our Firebase database is located in Sydney, Australia (Google Cloud region australia-southeast1). Google may also process some information in other countries where it operates, including the United States, for example when you sign in.</p>
+          <!-- Firestore location confirmed: australia-southeast1 (Sydney). If you add Firebase Storage or another database, check its location too. -->
+          <p>Waitlist and newsletter email addresses from our website are stored by Kit in the United States.</p>
           <!-- REVIEW: confirm Kit's data location in its Data Processing Addendum (kit.com). -->
-          <p>Before disclosing personal information overseas, we take reasonable steps to make sure the recipient handles it in line with the APPs, including through contractual protections.</p>
-          <!-- REVIEW: list actual hosting / AI / notification providers and their regions. If all data stays in Australia, replace this section with a statement saying so. -->
+          <p>Before disclosing personal information overseas, we take reasonable steps to make sure the recipient handles it in line with the APPs, including through contractual protections such as Google’s and Kit’s data processing terms.</p>
         </section>
 
         <section id="security">
           <h2>9. Keeping it secure</h2>
-          <p>We take reasonable steps to protect personal information from misuse, interference, loss, and unauthorised access, change or disclosure. These include encrypting data in transit, limiting staff access to people who need it, using secure login, and choosing service providers with strong security practices.</p>
+          <p>We take reasonable steps to protect personal information from misuse, interference, loss, and unauthorised access, change or disclosure. Firebase encrypts information while it’s being sent and while it’s stored. We also limit access to people who need it and use secure sign-in.</p>
           <p>No system is completely secure. Please keep your login details private and let us know straight away if you think your account has been compromised.</p>
-          <!-- REVIEW: confirm each security measure listed above is in place (and add "encryption at rest" if it is). Don't publish measures you don't actually use. -->
+          <!-- REVIEW: make sure your Firestore security rules only let each user read their own care circle's data, and that only the two of you can access the Firebase console. Don't publish measures you don't actually use. -->
         </section>
 
         <section id="retention">
           <h2>10. How long we keep it</h2>
-          <p>We keep personal information only for as long as we need it for the purposes in this policy, or as required by law. When an account is deleted, we delete or de-identify its personal information within a reasonable time. Copies in secure backups are removed as those backups are routinely replaced. We may keep limited records where the law requires it or to resolve disputes. If you leave the waitlist or unsubscribe from the newsletter, we stop emailing you, and you can ask us to delete your email address completely.</p>
+          <p>We keep personal information only for as long as we need it for the purposes in this policy, or as required by law. When an account is deleted, we delete or de-identify its information in Firebase within a reasonable time. Information stored only on a phone is removed when the app is deleted from that phone. We may keep limited records where the law requires it or to resolve disputes. If you leave the waitlist or unsubscribe from the newsletter, we stop emailing you, and you can ask us to delete your email address completely.</p>
         </section>
 
         <section id="rights">
@@ -291,7 +296,7 @@
           <p>For privacy questions, requests or complaints:</p>
           <p class="contact-card">
             <strong>MemoryCare Privacy</strong><br>
-            <span class="fill-in">[Legal entity name]</span> · ABN <span class="fill-in">[ABN]</span><br>
+            <strong>James Tanudji and Amay Chowdhury</strong><br>
             Email: <a href="mailto:memorycareau@gmail.com">memorycareau@gmail.com</a>
           </p>
           <p>See also our <a href="terms.html">Terms of Use</a>.</p>
