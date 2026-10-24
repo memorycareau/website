@@ -1,0 +1,145 @@
+{
+  "note": "Daily post queue. The scheduled task uses the first entry whose image_url is not already in a Buffer post.",
+  "posts": [
+    {
+      "id": "01",
+      "angle": "feature highlight",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-01-reminders.png",
+      "alt": "MemoryCare: Reminders that speak up. Tasks and medicines are read aloud at the right time, with one big button to mark each one done. Join the waitlist, link in bio.",
+      "instagram": "Reminders that speak up. In MemoryCare, tasks and medicines are read aloud at the right time, so there is no need to find glasses. One big button marks each one done, and Read aloud plays it again.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "Reminders that speak up. In MemoryCare, tasks and medicines are read aloud at the right time, so there is no need to find glasses. One big button marks each one done, and Read aloud plays it again.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "Reminders that speak up. In MemoryCare, tasks and medicines are read aloud at the right time, so there is no need to find glasses. One big button marks each one done, and Read aloud plays it again.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "Reminders that speak up. Tasks and medicines are read aloud at the right time, with one big button to mark each one done. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "02",
+      "angle": "caregiver tip",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-02-familiar-day.png",
+      "alt": "MemoryCare: Keep the day familiar. Doing things in the same order, at the same time, can make a day easier to follow. Join the waitlist, link in bio.",
+      "instagram": "Caregiver tip: keep the day familiar. Doing things in the same order and at the same time each day can make it easier to follow, for the person you care for and for you. Small, steady routines are a good place to start.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "Caregiver tip: keep the day familiar. Doing things in the same order and at the same time each day can make it easier to follow, for the person you care for and for you. Small, steady routines are a good place to start.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "Caregiver tip: keep the day familiar. Doing things in the same order and at the same time each day can make it easier to follow, for the person you care for and for you. Small, steady routines are a good place to start.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "Keep the day familiar. Doing things in the same order, at the same time, can make a day easier to follow. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "03",
+      "angle": "safety feature",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-03-sos.png",
+      "alt": "MemoryCare: One press for help. The SOS button is on the home screen. One press alerts family with their location. Join the waitlist, link in bio.",
+      "instagram": "Getting help should not depend on finding the right menu. In MemoryCare the SOS button is on the home screen, and one press alerts family with their location. MemoryCare does not replace 000. In an emergency, call 000.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "Getting help should not depend on finding the right menu. In MemoryCare the SOS button is on the home screen, and one press alerts family with their location. MemoryCare does not replace 000. In an emergency, call 000.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "Getting help should not depend on finding the right menu. In MemoryCare the SOS button is on the home screen, and one press alerts family with their location. MemoryCare does not replace 000. In an emergency, call 000.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "One press for help. The SOS button is on the home screen. One press alerts family with their location. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "04",
+      "angle": "awareness fact",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-04-more-than-memory.png",
+      "alt": "MemoryCare: Dementia is more than memory loss. It can affect thinking, language, mood and everyday tasks. Every person is different. Join the waitlist, link in bio.",
+      "instagram": "Dementia is more than memory loss. It can affect thinking, language, mood and everyday tasks, and every person's experience is different. We are building MemoryCare for people living with dementia, and the family who help them.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "Dementia is more than memory loss. It can affect thinking, language, mood and everyday tasks, and every person's experience is different. We are building MemoryCare for people living with dementia, and the family who help them.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "Dementia is more than memory loss. It can affect thinking, language, mood and everyday tasks, and every person's experience is different. We are building MemoryCare for people living with dementia, and the family who help them.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "Dementia is more than memory loss. It can affect thinking, language, mood and everyday tasks. Every person is different. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "05",
+      "angle": "for families",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-05-family-view.png",
+      "alt": "MemoryCare: See how the day is going. Without having to ring and ask. Tasks done, the last check-in and a week of wellbeing. Join the waitlist, link in bio.",
+      "instagram": "For family and caregivers: set everything up from your own phone, and see how the day is going without having to ring and ask. The MemoryCare dashboard shows tasks done this week, their last check-in and a week of wellbeing.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "For family and caregivers: set everything up from your own phone, and see how the day is going without having to ring and ask. The MemoryCare dashboard shows tasks done this week, their last check-in and a week of wellbeing.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "For family and caregivers: set everything up from your own phone, and see how the day is going without having to ring and ask. The MemoryCare dashboard shows tasks done this week, their last check-in and a week of wellbeing.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "See how the day is going. Without having to ring and ask. Tasks done, the last check-in and a week of wellbeing. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "06",
+      "angle": "how it works",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-06-setup.png",
+      "alt": "MemoryCare: Family set it up. They just use it. Medicines, tasks and contacts are added from a family member's phone. Join the waitlist, link in bio.",
+      "instagram": "The person living with dementia does not have to set anything up. In MemoryCare, a family member or carer adds the medicines, tasks and contacts from their own phone, and the person sees large text, plain words and one thing to do at a time.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "The person living with dementia does not have to set anything up. In MemoryCare, a family member or carer adds the medicines, tasks and contacts from their own phone, and the person sees large text, plain words and one thing to do at a time.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "The person living with dementia does not have to set anything up. In MemoryCare, a family member or carer adds the medicines, tasks and contacts from their own phone, and the person sees large text, plain words and one thing to do at a time.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "Family set it up. They just use it. Medicines, tasks and contacts are added from a family member's phone. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "07",
+      "angle": "waitlist call to action",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-07-waitlist.png",
+      "alt": "MemoryCare: Be first to know. Join the waitlist and we'll email you the day MemoryCare is available on iPhone and Android. Join the waitlist, link in bio.",
+      "instagram": "MemoryCare is being reviewed and tested now. Join the waitlist and we will email you the day it is available on iPhone and Android. It will be free to download, and the waitlist will hear pricing details first.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "MemoryCare is being reviewed and tested now. Join the waitlist and we will email you the day it is available on iPhone and Android. It will be free to download, and the waitlist will hear pricing details first.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "MemoryCare is being reviewed and tested now. Join the waitlist and we will email you the day it is available on iPhone and Android. It will be free to download, and the waitlist will hear pricing details first.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "Be first to know. Join the waitlist and we'll email you the day MemoryCare is available on iPhone and Android. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "08",
+      "angle": "feature highlight",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-08-brain-games.png",
+      "alt": "MemoryCare: Seven short, familiar games. Memory Match, Word Recall, Number Sequence and more. Scores are shared with family. Join the waitlist, link in bio.",
+      "instagram": "MemoryCare has seven short, familiar games to keep the mind active, including Memory Match, Word Recall and Daily Orientation. Scores are shared with family in Insights. The games are not a test, and MemoryCare is not a medical device.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "MemoryCare has seven short, familiar games to keep the mind active, including Memory Match, Word Recall and Daily Orientation. Scores are shared with family in Insights. The games are not a test, and MemoryCare is not a medical device.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "MemoryCare has seven short, familiar games to keep the mind active, including Memory Match, Word Recall and Daily Orientation. Scores are shared with family in Insights. The games are not a test, and MemoryCare is not a medical device.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "Seven short, familiar games. Memory Match, Word Recall, Number Sequence and more. Scores are shared with family. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "09",
+      "angle": "caregiver tip",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-09-look-after-yourself.png",
+      "alt": "MemoryCare: Look after yourself too. Caring is a long day. Rest, ask for help and take breaks when you can. Join the waitlist, link in bio.",
+      "instagram": "Caregiver tip: look after yourself too. Caring can be a long day, every day. Take breaks when you can, ask family and friends for help, and make time to rest. You matter in this, too.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "Caregiver tip: look after yourself too. Caring can be a long day, every day. Take breaks when you can, ask family and friends for help, and make time to rest. You matter in this, too.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "Caregiver tip: look after yourself too. Caring can be a long day, every day. Take breaks when you can, ask family and friends for help, and make time to rest. You matter in this, too.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "Look after yourself too. Caring is a long day. Rest, ask for help and take breaks when you can. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "10",
+      "angle": "safety feature",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-10-fall-check-in.png",
+      "alt": "MemoryCare: A check-in before an alert. If a possible fall is detected, MemoryCare asks \"Are you OK?\" before telling anyone. Join the waitlist, link in bio.",
+      "instagram": "If the phone detects a possible fall, MemoryCare checks in first. The screen asks \"Are you OK?\" with a countdown, and if there is no answer in time, caregivers are alerted. Fall detection can miss a fall or raise an alarm when nothing happened, and it needs the phone to be on, charged and connected.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "If the phone detects a possible fall, MemoryCare checks in first. The screen asks \"Are you OK?\" with a countdown, and if there is no answer in time, caregivers are alerted. Fall detection can miss a fall or raise an alarm when nothing happened, and it needs the phone to be on, charged and connected.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "If the phone detects a possible fall, MemoryCare checks in first. The screen asks \"Are you OK?\" with a countdown, and if there is no answer in time, caregivers are alerted. Fall detection can miss a fall or raise an alarm when nothing happened, and it needs the phone to be on, charged and connected.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "A check-in before an alert. If a possible fall is detected, MemoryCare asks \"Are you OK?\" before telling anyone. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "11",
+      "angle": "awareness fact",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-11-many-causes.png",
+      "alt": "MemoryCare: Dementia has many causes. Alzheimer's disease is the most common, but there are other types too. Join the waitlist, link in bio.",
+      "instagram": "Dementia has many causes. Alzheimer's disease is the most common, but there are other types too, and they can look different from person to person. If you are worried about memory or thinking changes, a doctor is the right person to talk to.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "Dementia has many causes. Alzheimer's disease is the most common, but there are other types too, and they can look different from person to person. If you are worried about memory or thinking changes, a doctor is the right person to talk to.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "Dementia has many causes. Alzheimer's disease is the most common, but there are other types too, and they can look different from person to person. If you are worried about memory or thinking changes, a doctor is the right person to talk to.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "Dementia has many causes. Alzheimer's disease is the most common, but there are other types too. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "12",
+      "angle": "feature highlight",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-12-daily-check-in.png",
+      "alt": "MemoryCare: A daily check-in. Great, Okay or Not good. A note can be added and shared with caregivers. Join the waitlist, link in bio.",
+      "instagram": "Once a day, MemoryCare asks how they are doing: Great, Okay or Not good. They can add a note, and it is shared with their caregivers, so changes are easier to notice.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "Once a day, MemoryCare asks how they are doing: Great, Okay or Not good. They can add a note, and it is shared with their caregivers, so changes are easier to notice.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "Once a day, MemoryCare asks how they are doing: Great, Okay or Not good. They can add a note, and it is shared with their caregivers, so changes are easier to notice.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "A daily check-in. Great, Okay or Not good. A note can be added and shared with caregivers. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "13",
+      "angle": "for families",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-13-location.png",
+      "alt": "MemoryCare: Know where they are. Family can see location when they need to, and open it straight in Maps. Join the waitlist, link in bio.",
+      "instagram": "For family and caregivers: see where they are whenever you need to, and open it straight in Maps. Only the caregivers you add can see their information.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "For family and caregivers: see where they are whenever you need to, and open it straight in Maps. Only the caregivers you add can see their information.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "For family and caregivers: see where they are whenever you need to, and open it straight in Maps. Only the caregivers you add can see their information.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "Know where they are. Family can see location when they need to, and open it straight in Maps. Join the waitlist: getmemorycare.app"
+    },
+    {
+      "id": "14",
+      "angle": "honest about limits",
+      "image_url": "https://getmemorycare.app/assets/social/memorycare-post-14-not-medical.png",
+      "alt": "MemoryCare: Built to support, not replace. MemoryCare isn't a medical device. In an emergency, call 000. Join the waitlist, link in bio.",
+      "instagram": "What MemoryCare will not do: it is not a medical device, it does not diagnose or treat anything, and it does not replace 000. It is a calm daily routine app that supports people living with dementia and the family who help them.\n\nJoin the waitlist: https://getmemorycare.app/ (link in bio)\n\n#Dementia #DementiaCare #Caregivers #MemoryCare",
+      "facebook": "What MemoryCare will not do: it is not a medical device, it does not diagnose or treat anything, and it does not replace 000. It is a calm daily routine app that supports people living with dementia and the family who help them.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "linkedin": "What MemoryCare will not do: it is not a medical device, it does not diagnose or treat anything, and it does not replace 000. It is a calm daily routine app that supports people living with dementia and the family who help them.\n\nJoin the waitlist: https://getmemorycare.app/",
+      "x": "Built to support, not replace. MemoryCare isn't a medical device. In an emergency, call 000. Join the waitlist: getmemorycare.app"
+    }
+  ]
+}
