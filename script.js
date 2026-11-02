@@ -94,11 +94,13 @@
     try { localStorage.setItem(STORAGE_KEY, on ? '1' : '0'); } catch (_) {}
   });
 
-  // Waitlist: posts the email to Kit (kit.com) and shows the result in place.
-  // Without JavaScript the form still posts to Kit, which shows its own page.
+  // Waitlist: saves the email to the "waitlist" collection in our Firestore
+  // database through Firestore's REST API. Firestore security rules only allow
+  // new entries to be created; nobody can read the list from the website.
   const waitlist = document.querySelector('.waitlist-form');
   if (waitlist) {
     const email = waitlist.querySelector('input[type="email"]');
+    const trap = waitlist.querySelector('input[name="website"]');
     const button = waitlist.querySelector('button[type="submit"]');
     const status = document.getElementById('waitlist-status');
     const FALLBACK = 'Sorry, something went wrong. Please try again, or email us at memorycareau@gmail.com.';
@@ -108,10 +110,18 @@
       status.className = 'waitlist-status' + (kind ? ' is-' + kind : '');
     }
 
+    function finish(message) {
+      waitlist.classList.add('is-done');
+      showStatus(message, 'success');
+      status.setAttribute('tabindex', '-1');
+      status.focus();
+    }
+
     waitlist.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      if (!email.value.trim() || !email.checkValidity()) {
+      const address = email.value.trim();
+      if (!address || !email.checkValidity()) {
         email.setAttribute('aria-invalid', 'true');
         showStatus('Please enter a full email address, like name@example.com.', 'error');
         email.focus();
@@ -119,7 +129,15 @@
       }
       email.removeAttribute('aria-invalid');
 
-      if (waitlist.action.includes('KIT_FORM_ID')) {
+      // Bots fill in the hidden field; pretend it worked and save nothing
+      if (trap && trap.value) {
+        finish('You’re on the list. We’ll email you the day MemoryCare launches.');
+        return;
+      }
+
+      const project = waitlist.dataset.firebaseProject;
+      const apiKey = waitlist.dataset.firebaseKey;
+      if (!project || project.startsWith('FIREBASE_') || !apiKey || apiKey.startsWith('FIREBASE_')) {
         showStatus('The waitlist isn’t connected yet. Please email us at memorycareau@gmail.com.', 'error');
         return;
       }
@@ -128,28 +146,29 @@
       button.textContent = 'Joining…';
       showStatus('');
 
-      try {
-        const response = await fetch(waitlist.action, {
-          method: 'POST',
-          body: new FormData(waitlist),
-          headers: { Accept: 'application/json' },
-        });
-        const data = response.ok ? await response.json() : null;
+      const url = 'https://firestore.googleapis.com/v1/projects/' + encodeURIComponent(project) +
+        '/databases/(default)/documents/waitlist?key=' + encodeURIComponent(apiKey);
 
-        if (data && data.status === 'success') {
-          waitlist.classList.add('is-done');
-          showStatus('You’re on the list. Check your inbox for an email from us to confirm your address.', 'success');
-          status.setAttribute('tabindex', '-1');
-          status.focus();
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fields: {
+              email: { stringValue: address.toLowerCase() },
+              createdAt: { timestampValue: new Date().toISOString() },
+              source: { stringValue: 'website' },
+            },
+          }),
+        });
+
+        if (response.ok) {
+          finish('You’re on the list. We’ll email you the day MemoryCare launches.');
           return;
         }
-        if (data && data.status === 'quarantined' && data.url) {
-          // Kit wants a quick spam check before accepting the signup
-          window.location.href = data.url;
-          return;
-        }
-        const messages = data && data.errors && data.errors.messages;
-        showStatus(messages && messages.length ? messages.join(' ') : FALLBACK, 'error');
+        showStatus(response.status === 429
+          ? 'Lots of people are signing up right now. Please try again in a minute.'
+          : FALLBACK, 'error');
       } catch (_) {
         showStatus(FALLBACK, 'error');
       }

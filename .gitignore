@@ -1,0 +1,9 @@
+# Firebase service account keys: never commit these (keep them outside this folder)
+*firebase-adminsdk*.json
+*service-account*.json
+*serviceAccount*.json
+
+# Dependencies for tools/export-waitlist.mjs
+node_modules/
+tools/package.json
+tools/package-lock.json
